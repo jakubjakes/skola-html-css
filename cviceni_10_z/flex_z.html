@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+* {
+box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(177, 177, 177);
+}
+h1 {
+  color: #4312cc;
+  text-align: center;
+}
+
+/* úkol 1*/
+#flex-box1 {
+  max-width: 90%;
+  min-height:250px;
+  margin: 40px auto;
+  background-color: #FFF;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center ;
+
+}
+
+.numbox {
+  background-color: #4312cc;
+  color: #FFF;
+  width:100px;
+  height:100px;
+  padding:15px;
+  margin:10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+
+/* úkol 2*/
+#flex-box2 {
+  width: 200px;
+  height: 500px;
+  margin: 40px auto;
+  background-color: #FFF;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+   
+
+}
+
+.textbox2 {
+  margin: 10px;
+  width:100px;
+  height:100px;
+  
+}
+
+.textbox2:nth-child(1) {background-color: #c0dbe2;}
+.textbox2:nth-child(2) {background-color: #eec3f1;}
+.textbox2:nth-child(3) {background-color: #ccb9da;}
+
+
+/* úkol 3*/
+#flex-box3 {
+  max-width: 90%;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.textbox3 {
+  padding: 10px;
+  margin: 10px;
+  min-width: 20%;
+  flex: 1;
+
+}
+
+.textbox3:nth-child(1) {background-color: #c0dbe2;order:3;}
+.textbox3:nth-child(2) {background-color: #eec3f1;order:2;}
+.textbox3:nth-child(3) {background-color: #ccb9da;order:1;}
+
+
+/* úkol 4*/
+#flex-box4 {
+  max-width: 90%;
+  margin: 40px auto;
+  display: flex;
+  
+
+}
+
+.textbox4 {
+  padding: 10px;
+  margin: 5px;
+  background-color: #757175;
+  color: white;
+  flex: 1;
+}
+
+.textbox4:nth-child(1) {flex: 1;}
+.textbox4:nth-child(2) {flex: 3;}
+.textbox4:nth-child(3) {flex: 1;}
+
+/* úkol 5*/
+#flex-box5 {
+  max-width: 90%;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.levy {
+  background-color: #FFF;
+  padding: 20px;
+  flex: 1;
+
+}
+.pravy {
+  background-color: #e9ebeb;
+  flex: 1;
+  justify-content: center;
+  align-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+.pravy_a {background-color: #c0dbe2;flex: 1;}
+.pravy_b {background-color: #eec3f1;flex: 1;}
+.pravy_c {background-color: #ccb9da;flex: 1;}
+
+.pravy p {
+  margin: auto;
+
+}
+    </style>
+</head>
+<body>
+  <h1>FLEXBOX</h1>
+    <!-- úkol 1-->
+    <div id="flex-box1">
+        <div class="numbox">1</div>
+        <div class="numbox">2</div>
+        <div class="numbox">3</div>
+        <div class="numbox">4</div>
+        <div class="numbox">5</div>
+        <div class="numbox">6</div>
+    </div>
+
+    <!-- úkol 2-->
+    <div id="flex-box2">
+      <div class="textbox2"></div>
+      <div class="textbox2"></div>
+      <div class="textbox2"></div>
+    </div>
+
+
+    <!-- úkol 3-->
+    <div id="flex-box3">
+      <div class="textbox3">
+       <h2>Nadpis 2</h2> 
+       <p>Lákamí vůněhulás úmyval rohlivý jednovod lek lek zlem Trhnova ne mělý. Vá z Bický Aler hal jakovoda oba Sudíční Mat tavětraje obzor. Jený dostrojsk dechyňský bývá bubejis čin rojdi přehliv obusl záprajak řící. Povačkoje hou čuvadi nesta lehlý ří ta vátomálož pa řícit Lemí. Lvat Al muto večný moc ří já raží sůl autní vese. Úmyvadiát řící Lákamí jít spouzavěď roští lákamat přestavý řícipádaj umraje lva. Ční obzor Lžičkamí lehýnkamí neřese zenžto školý ka úmyvaledn řík Umrabus. Mat alehradi hafan oba hudíčkou Vla Ky z V přiroštím zteplaled. Ští přední mělý zavěď ří tak říkem úmysl.</p>
+      </div>
+      <div class="textbox3">
+        <h2>Nadpis 2</h2> 
+        <p>Lákamí vůněhulás úmyval rohlivý jednovod lek lek zlem Trhnova ne mělý. Vá z Bický Aler hal jakovoda oba Sudíční Mat tavětraje obzor. Jený dostrojsk dechyňský bývá bubejis čin rojdi přehliv obusl záprajak řící. Povačkoje hou čuvadi nesta lehlý ří ta vátomálož pa řícit Lemí. Lvat Al muto večný moc ří já raží sůl autní vese. Úmyvadiát řící Lákamí jít spouzavěď roští lákamat přestavý řícipádaj umraje lva. Ční obzor Lžičkamí lehýnkamí neřese zenžto školý ka úmyvaledn řík Umrabus. Mat alehradi hafan oba hudíčkou Vla Ky z V přiroštím zteplaled. Ští přední mělý zavěď ří tak říkem úmysl.</p>
+       </div>
+       <div class="textbox3">
+        <h2>Nadpis 2</h2> 
+        <p>Lákamí vůněhulás úmyval rohlivý jednovod lek lek zlem Trhnova ne mělý. Vá z Bický Aler hal jakovoda oba Sudíční Mat tavětraje obzor. Jený dostrojsk dechyňský bývá bubejis čin rojdi přehliv obusl záprajak řící. Povačkoje hou čuvadi nesta lehlý ří ta vátomálož pa řícit Lemí. </p>
+       </div>
+  </div>
+
+    <!-- úkol 4-->
+    <div id="flex-box4">
+      <div class="textbox4">
+       <h2>Postranní sloupec 1</h2> 
+       <p>Lákamí vůněhulás úmyval rohlivý jednovod lek lek zlem Trhnova ne mělý. Vá z Bický Aler hal jakovoda oba Sudíční Mat tavětraje obzor. Jený dostrojsk dechyňský bývá bubejis čin rojdi přehliv obusl záprajak řící. Povačkoje hou čuvadi nesta lehlý ří ta vátomálož pa řícit Lemí. Lvat Al muto večný moc ří já raží sůl autní vese. Úmyvadiát řící Lákamí jít spouzavěď roští lákamat přestavý řícipádaj umraje lva. Ční obzor Lžičkamí lehýnkamí neřese zenžto školý ka úmyvaledn řík Umrabus. Mat alehradi hafan oba hudíčkou Vla Ky z V přiroštím zteplaled. Ští přední mělý zavěď ří tak říkem úmysl.</p>
+      </div>
+      <div class="textbox4">
+        <h2>Prostřední sloupec</h2> 
+        <p>Lákamí vůněhulás úmyval rohlivý jednovod lek lek zlem Trhnova ne mělý. Vá z Bický Aler hal jakovoda oba Sudíční Mat tavětraje obzor. Jený dostrojsk dechyňský bývá bubejis čin rojdi přehliv obusl záprajak řící. Povačkoje hou čuvadi nesta lehlý ří ta vátomálož pa řícit Lemí. Lvat Al muto večný moc ří já raží sůl autní vese. Úmyvadiát řící Lákamí jít spouzavěď roští lákamat přestavý řícipádaj umraje lva. Ční obzor Lžičkamí lehýnkamí neřese zenžto školý ka úmyvaledn řík Umrabus. Mat alehradi hafan oba hudíčkou Vla Ky z V přiroštím zteplaled. Ští přední mělý zavěď ří tak říkem úmysl.</p>
+        <p>Lákamí vůněhulás úmyval rohlivý jednovod lek lek zlem Trhnova ne mělý. Vá z Bický Aler hal jakovoda oba Sudíční Mat tavětraje obzor. Jený dostrojsk dechyňský bývá bubejis čin rojdi přehliv obusl záprajak řící. Povačkoje hou čuvadi nesta lehlý ří ta vátomálož pa řícit Lemí. Lvat Al muto večný moc ří já raží sůl autní vese. Úmyvadiát řící Lákamí jít spouzavěď roští lákamat přestavý řícipádaj umraje lva. Ční obzor Lžičkamí lehýnkamí neřese zenžto školý ka úmyvaledn řík Umrabus. Mat alehradi hafan oba hudíčkou Vla Ky z V přiroštím zteplaled. Ští přední mělý zavěď ří tak říkem úmysl.</p>
+        <p>Lákamí vůněhulás úmyval rohlivý jednovod lek lek zlem Trhnova ne mělý. Vá z Bický Aler hal jakovoda oba Sudíční Mat tavětraje obzor. Jený dostrojsk dechyňský bývá bubejis čin rojdi přehliv obusl záprajak řící. Povačkoje hou čuvadi nesta lehlý ří ta vátomálož pa řícit Lemí. Lvat Al muto večný moc ří já raží sůl autní vese. Úmyvadiát řící Lákamí jít spouzavěď roští lákamat přestavý řícipádaj umraje lva. Ční obzor Lžičkamí lehýnkamí neřese zenžto školý ka úmyvaledn řík Umrabus. Mat alehradi hafan oba hudíčkou Vla Ky z V přiroštím zteplaled. Ští přední mělý zavěď ří tak říkem úmysl.</p>
+       </div>
+       <div class="textbox4">
+        <h2>Postranní sloupec 2</h2> 
+        <p>Lákamí vůněhulás úmyval rohlivý jednovod lek lek zlem Trhnova ne mělý. Vá z Bický Aler hal jakovoda oba Sudíční Mat tavětraje obzor. Jený dostrojsk dechyňský bývá bubejis čin rojdi přehliv obusl záprajak řící. Povačkoje hou čuvadi nesta lehlý ří ta vátomálož pa řícit Lemí. </p>
+       </div>
+  </div>
+
+  <!-- úkol 5-->
+  <div id="flex-box5">
+      <div class="levy">
+        <p>Lákamí vůněhulás úmyval rohlivý jednovod lek lek zlem Trhnova ne mělý. Vá z Bický Aler hal jakovoda oba Sudíční Mat tavětraje obzor. Jený dostrojsk dechyňský bývá bubejis čin rojdi přehliv obusl záprajak řící. Povačkoje hou čuvadi nesta lehlý ří ta vátomálož pa řícit Lemí. Lvat Al muto večný moc ří já raží sůl autní vese. Úmyvadiát řící Lákamí jít spouzavěď roští lákamat přestavý řícipádaj umraje lva. Ční obzor Lžičkamí lehýnkamí neřese zenžto školý ka úmyvaledn řík Umrabus. Mat alehradi hafan oba hudíčkou Vla Ky z V přiroštím zteplaled. Ští přední mělý zavěď ří tak říkem úmysl.</p>
+        <p>Lákamí vůněhulás úmyval rohlivý jednovod lek lek zlem Trhnova ne mělý. Vá z Bický Aler hal jakovoda oba Sudíční Mat tavětraje obzor. Jený dostrojsk dechyňský bývá bubejis čin rojdi přehliv obusl záprajak řící. Povačkoje hou čuvadi nesta lehlý ří ta vátomálož pa řícit Lemí. Lvat Al muto večný moc ří já raží sůl autní vese. Úmyvadiát řící Lákamí jít spouzavěď roští lákamat přestavý řícipádaj umraje lva. Ční obzor Lžičkamí lehýnkamí neřese zenžto školý ka úmyvaledn řík Umrabus. Mat alehradi hafan oba hudíčkou Vla Ky z V přiroštím zteplaled. Ští přední mělý zavěď ří tak říkem úmysl.</p>
+        <p>Lákamí vůněhulás úmyval rohlivý jednovod lek lek zlem Trhnova ne mělý. Vá z Bický Aler hal jakovoda oba Sudíční Mat tavětraje obzor. Jený dostrojsk dechyňský bývá bubejis čin rojdi přehliv obusl záprajak řící. Povačkoje hou čuvadi nesta lehlý ří ta vátomálož pa řícit Lemí. Lvat Al muto večný moc ří já raží sůl autní vese. Úmyvadiát řící Lákamí jít spouzavěď roští lákamat přestavý řícipádaj umraje lva. Ční obzor Lžičkamí lehýnkamí neřese zenžto školý ka úmyvaledn řík Umrabus. Mat alehradi hafan oba hudíčkou Vla Ky z V přiroštím zteplaled. Ští přední mělý zavěď ří tak říkem úmysl.</p>
+     </div>
+     <div class="pravy">
+        <div class="pravy_a">
+          <p>A</p>
+        </div>
+        <div class="pravy_b">
+          <p>B</p>
+        </div>
+        <div class="pravy_c">
+          <p>C</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

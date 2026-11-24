@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>Řidičský průkaz - informační formulář</h2> <br> <br>
+<form action="ridicak.html" method="get">
+<fieldset>
+<legend>Údaje o žadateli</legend>
+<label for="jm">Jméno: </label><input type="text" name="jmeno" id="jm"> <br><br>
+<label for="pr">Příjmení: </label><input type="text" name="prijmeni" id="pr"> <br> <br>
+<label for="dn">Datum narození: </label><input type="date" name="datum" id="dn"> <br><br>
+<label>Email: </label><input type="email" name="email" id="email" placeholder="Zde napište Vaši emailovou adresu" size="26"> <br><br>
+<label>Národnost: </label><input type="text" name="narodnost" id="nd" value="česká">
+</fieldset> <br>
+Pohlaví: <br>
+žena <input type="radio" name="pohlavi" value="žena" checked>
+muž <input type="radio" name="pohlavi" value="muž"> <br><br>
+Skupiny řidiských oprávnění: <br>
+<select name="skupiny">
+<option value="A motocykly">A motocykly</option>
+<option value="B motorová vozidla do 3500 kg" selected>B motorová vozidla do 3500 kg</option>
+<option value="C motorová vozidla nad 3500 kg">C motorová vozidla nad 3500 kg</option>
+<option value="D motorová vozidla pro dopravu osob">D motorová vozidla pro dopravu osob</option>
+<option value="T zemědělské a technické traktory">T zemědělské a technické traktory</option>
+</select> <br><br>
+Účel pořízení průkazu: <br>
+<input type="checkbox" name="ucel1" checked value="doprava do zaměstnání">doprava do zaměstnání <br>
+<input type="checkbox" name="ucel2" value="pracovní účely">pracovní účely <br>
+<input type="checkbox" name="ucel3" value="přeprava osob">přeprava osob <br> 
+<input type="checkbox" name="ucel4" value="přeprava nákladu">přeprava nákladu <br><br>
+Zvláštní požadavky: <br>
+<textarea name="pozadavky" rows="5" cols="30" placeholder="Zde napište své požadavky"></textarea> <br><br>
+<label for="br">Barva auta: </label><input type="color" name="barva" id="br" > <br><br>
+<input type="submit" value="Odeslat údaje">
+</form>   
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letohrad</title>
+    <link rel="stylesheet" href="styl moje stranky .css">
+</head>
+<body id="formularek">
+    <div class="header">
+        <div class="logo"><a href="#">Letohrad</a></div>
+      <div id="menu">
+        <ul>
+          <li><a href="Info.html">O městě</a></li>
+          <li><a href="škola.html">Škola</a></li>
+          <li><a href="formular.html">Formular</a></li>
+          <li><a href="sport.html">Sport</a></li>
+          <li><a href="fotoalbum.html">Fotoalbum </a></li>
+        </ul>
+      </div>  
+    </div>
+    
+    <header><h1>Formulář</h1><br><br></header>
+    <div id="celek">
+    <form action="" method="GET">
+      
+          <h3>Osobní Údaje</h3>
+          <div id="field">
+          <label for="jmeno">Jméno:</label>
+          <input type="text" id="jmeno" name="jmeno" required>
+          <br><br>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+          <br><br>
+          <label for="datum">Datum narození:</label>
+          <input type="date" id="datum" name="datum" required>
+        </div>
+          <br><br>
+       
+  
+      
+          <h3>Vaše Preference</h3>
+          <div id="field"> 
+          <label for="oblibeny-den">Oblíbený den v týdnu:</label>
+          <select id="oblibeny-den" name="oblibeny-den" required>
+              <option value="pondeli">Pondělí</option>
+              <option value="utery">Úterý</option>
+              <option value="streda">Středa</option>
+              <option value="ctvrtek">Čtvrtek</option>
+              <option value="patek">Pátek</option>
+              <option value="sobota">Sobota</option>
+              <option value="nedele">Neděle</option>
+          </select>
+        </div>
+          <br><br>
+        
+
+          <h3>Oblíbené sporty:</h3>
+          <br>
+          <div id="field">
+          <input type="checkbox" id="fotbal" name="sporty" value="fotbal">
+          <label for="fotbal">Fotbal</label>
+          <br>
+          <input type="checkbox" id="basketbal" name="sporty" value="basketbal">
+          <label for="basketbal">Basketbal</label>
+          <br>
+          <input type="checkbox" id="tenis" name="sporty" value="tenis">
+          <label for="tenis">Tenis</label>
+        </div>
+          <br><br>
+
+          <h3>Vyberte si oblíbený nápoj:</h3>
+          <br>
+          <div id="field">
+          <input type="radio" id="voda" name="napoj" value="voda" required>
+          <label for="voda">Voda</label>
+          <br>
+          <input type="radio" id="kava" name="napoj" value="kava">
+          <label for="kava">Káva</label>
+          <br>
+          <input type="radio" id="caj" name="napoj" value="caj">
+          <label for="caj">Čaj</label>
+        </div>
+      
+
+      <br>
+      <div id="Odeslat">
+      <input type="submit" value="Odeslat">
+    </div>
+  </form>
+</div>
+</div>
+</body>
+</html>

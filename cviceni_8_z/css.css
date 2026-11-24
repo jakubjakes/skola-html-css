@@ -1,0 +1,19 @@
+#hlavicka {
+    text-align: center;
+  }
+  h2{
+    color: blueviolet;
+    text-decoration: overline underline;
+    text-transform: uppercase ;
+  }
+  h1{
+    color: blue;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    font-family: ;
+  }
+  div{
+  }
+  hr {
+    outline-style: dashed;
+  }

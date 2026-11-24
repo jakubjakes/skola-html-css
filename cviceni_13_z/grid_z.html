@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid pokus</title>
+    <style>
+         *{box-sizing:border-box;}
+
+         /*1. příklad*/
+         #grid1{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: blue;
+            padding: 10px;
+            grid-gap: 10px 20px;w
+
+         }
+         #grid1 > div {
+            background-color: rgb(219, 219, 241);5
+            text-align: center;
+            padding: 10px;
+         }
+         #jedna{
+            grid-row: span 3;
+         }
+
+        
+        
+         /*2. příklad*/
+         #grid2{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            background-color: rgb(145, 39, 153);
+            padding: 10px;
+         }
+         #grid2 > div{
+            background-color: rgb(219, 219, 241);
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+
+         }
+         #grid2 > div:nth-child(even){
+            background-color: rgb(128, 128, 225);
+
+         }
+         #subgrid2{
+            display:grid ;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+
+         }
+         #subgrid2 > div{
+            background-color: powderblue;
+         }
+         #subgrid2 div:nth-child(3){
+            grid-row: 1/3;
+            grid-column: 1/4;
+         }
+       
+
+         /*3. příklad*/
+         .item1{grid-area: header;}
+         .item2{grid-area: menu;}
+         .item3{grid-area: left;}
+         .item4{grid-area: main;}
+         .item5{grid-area: right;}
+         .item6{grid-area: footer;}
+
+         #grid3{
+            display: grid;
+            grid-template-areas:'header header header header header header '
+            'menu left main main . right'
+            'menu footer footer footer footer footer';
+            background-color: gray;
+            padding: 10px;
+            grid-gap: 10px;
+
+
+         }
+         #grid3 > div {
+            background-color: rgb(219, 219, 241);
+            text-align: center;
+         }
+
+
+         
+        
+        </style>
+</head>
+<body>
+    <div id="grid1">
+        <div id="jedna">1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>      
+    </div>  
+    <hr>
+    <div id="grid2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div id="subgrid2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div> 
+            <div>5</div>
+        </div>
+        <div>5</div>
+        <div>6</div>      
+    </div>  
+    <hr>
+    <div id="grid3">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Left</div> 
+        <div class="item4">Main</div>  
+        <div class="item5">Right</div>
+        <div class="item6">Footer</div>
+      </div>
+</body>
+</html>

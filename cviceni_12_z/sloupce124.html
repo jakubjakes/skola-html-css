@@ -1,0 +1,59 @@
+  <!DOCTYPE html>
+<html">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sloupce</title>
+      <style>
+        body{
+          padding: 0;
+          margin: 0;
+          background-color: rgb(177, 177, 177);
+        }
+        *{box-sizing: border-box;}
+        div.col{
+          background-color: red;
+          border: 1px solid black;
+          padding: 10px;
+          
+        }
+        @media only screen and (min-width:600px){
+          div.col{
+            display:inline-block;
+            background-color: green;
+            width: 50%;
+          }
+        }
+        @media only screen and (min-width:900px){
+          div.col{
+           background-color: blue;
+           width: 25%;
+           }
+        }
+        
+        
+        </style>
+  </head>
+    <body>
+
+  <h2>Responzivní čtyři sloupce</h2>
+  <p>Pro zařízení se šířkou do 600px, budou sloupce pod sebou, pro zařízení s šířkou do 900px budou  2 sloupce, pro širší zařízení 4 sloupce vedle sebe.</p>
+
+  <div class="row">
+    <div class="col">
+      <h2>Sloupec 1</h2>
+      <p>Lákamí vůněhulás úmyval rohlivý jednovod lek poler lžičkouza hudíčkový neumysl dechyňsko. Čuvaleda taneumra úmyva umělý lžičkodpo kraburdí hulákak tak ří školý pytlačkou...</p>
+    </div><div class="col">
+      <h2>Sloupec 2</h2>
+      <p>Lákamí vůněhulás úmyval rohlivý jednovod lek poler lžičkouza hudíčkový neumysl dechyňsko. Čuvaleda taneumra úmyva umělý lžičkodpo kraburdí hulákak tak ří školý pytlačkou...</p>
+    </div><div class="col">
+      <h2>Sloupec 3</h2>
+      <p>Lákamí vůněhulás úmyval rohlivý jednovod lek poler lžičkouza hudíčkový neumysl dechyňsko. Čuvaleda taneumra úmyva umělý lžičkodpo kraburdí hulákak tak ří školý pytlačkou...</p>
+    </div><div class="col">
+      <h2>Sloupec 4</h2>
+      <p>Lákamí vůněhulás úmyval rohlivý jednovod lek poler lžičkouza hudíčkový neumysl dechyňsko. Čuvaleda taneumra úmyva umělý lžičkodpo kraburdí hulákak tak ří školý pytlačkou...</p>
+    </div>
+  </div>
+
+    </body>
+</html>

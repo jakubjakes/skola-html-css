@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+ <meta charset="utf-8">
+<title>Příklad relativně pozicovaného bloku</title>
+<style>
+
+ body {
+	background: white;
+	color: black;
+	}
+
+#ramecek {
+	width: 20em;
+	padding: 0.5em;
+	background: silver;
+	color: black;
+	border: 1px solid black;
+	}
+span {
+	border: 1px solid black;
+	background-color: aquamarine;
+	margin:10px;
+	display: block;
+	padding: 5px;
+	position: relative;
+	left: 50px;
+	top: 70px;
+
+
+	}
+
+
+
+</style>
+</head>
+<body>
+<div id="ramecek"> 
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <span>Tato část textu je posunuta o -50px vpravo</span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+</div>
+</body>
+</html>

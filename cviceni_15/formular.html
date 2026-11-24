@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="formular.html" method="get">
+        <label for="jm">jmeno</label> <input type="text" name="jmeno" id="jm"> <br><br>
+        <label for="pr">prijmeni</label> <input type="text" name="prijmeni" id="pr" required placeholder="zadej prijmeni"> <br><br>
+        heslo <input type="password" name="heslo" size="10"
+        maxlength="25"><br><br>
+        barva <input type="color" name="barva"><br><br>
+        cislo <input type="number" name="datum" min="0" max="100" step="10" ><br><br>
+        rozsah <input type="range" name="oddo" min="1" max="10">10<br><br>
+
+        pohlavi:<br>
+        <input type="radio" name="pohlavi" value="zena" checked>zena<br>
+        <input type="radio" name="pohlavi" value="muz">muz<br>
+        <input type="radio" name="pohlavi" value="jine">jine<br>
+        <br>
+        <fieldset>
+        <legend>oblibena zvirata</legend>
+        <input type="checkbox" name="zvire 1" value="pes">pes<br>
+        <input type="checkbox" name="zvire2" value="kocka">kocka<br>
+        <input type="checkbox" name="zvire3" value="zelva">zelva<br>
+         </fieldset>
+         <br>
+         poznamka:<br>
+         <textarea name="poznamka" rows="10" cols="30" placeholder="napis poznamku"></textarea><br><br>
+         jmena:<br>
+         <select name="jmena" multiple>
+            <option></option>
+            <optgroup label="muzi">
+                <option value="jan">jan</option>
+                <option value="petr">petr</option>
+            </optgroup>
+                <optgroup label="zeny">
+                <option value="jana">jana</option>
+                <option value="dora">dora</option>
+            </optgroup>
+         </select>
+         <br><br>
+        <input type="submit" value="Odeslat data">
+    </form>
+</body>
+</html>

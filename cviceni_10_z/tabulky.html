@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Tabulky</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    table { 
+  border-collapse: collapse;
+}
+ 
+table td,  table th {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d5d5d5;
+}
+ 
+/* vynechané sloupce */
+#vynech th:nth-child(3), #vynech td:nth-child(3) {
+  display: none;
+}
+ 
+ 
+/*rolování uvnitř*/
+@media only screen and (max-width:  750px){
+  div {
+    overflow: auto;
+    max-width: 100%;
+  }
+}
+ 
+ 
+ 
+ 
+/*Záměna sloupců na řádky*/
+@media only screen and (max-width:  750px){
+#zamena th {
+  display: none;
+}
+#zamena tr {
+  display: block;
+  border-bottom: 1px solid blue;
+}
+ 
+#zamena td {
+  display: block;
+  border:0;
+}
+#zamena td::before {
+  display: inline-block;
+  border: 0px;
+  content: attr(title)": ";
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
+ }
+    </style>
+  </head>
+  <body>
+   <h1>Responsivní tabulky</h1>
+ <h2>Vynechané sloupce</h2>  
+ <table id="vynech">
+  <tr>
+   <th>Jméno</th>
+   <th>Adresa</th>
+   <th>PSČ</th>
+   <th>Město</th>
+   <th>Rok narození</th>
+  </tr>
+  <tr>
+   <td title="Jméno">Pavel Pavlovič</td>
+   <td title="Adresa">Hustá 159</td>
+   <td title="PSČ">56789</td>
+   <td title="Město">Brno</td>
+   <td title="Rok narození">1999</td>
+  </tr>
+  <tr>
+   <td title="Jméno">Jana Jančíková</td>
+   <td title="Adresa">Jasná 45</td>
+   <td title="PSČ">54321</td>
+   <td title="Město">Liberec</td>
+   <td title="Rok narození">1989</td>
+  </tr>
+  <tr>
+   <td title="Jméno">Lubomír Mirovic</td>
+   <td title="Adresa">Světová 258</td>
+   <td title="PSČ">35719</td>
+   <td title="Město">Praha</td>
+   <td title="Rok narození">2001</td>
+  </tr>
+  <tr>
+   <td title="Jméno">Alice Lexová</td>
+   <td title="Adresa">Líbivá 33</td>
+   <td title="PSČ">91730</td>
+   <td title="Město">Ostrava</td>
+   <td title="Rok narození">2000</td>
+  </tr>
+ </table>
+ 
+ <h2>Rolování uvnitř</h2>  
+ <table id="zamena">
+  <tr>
+   <th>Jméno</th>
+   <th>Adresa</th>
+   <th>PSČ</th>
+   <th>Město</th>
+   <th>Rok narození</th>
+  </tr>
+  <tr>
+   <td title="Jméno">Pavel Pavlovič</td>
+   <td title="Adresa">Hustá 159</td>
+   <td title="PSČ">56789</td>
+   <td title="Město">Brno</td>
+   <td title="Rok narození">1999</td>
+  </tr>
+  <tr>
+   <td title="Jméno">Jana Jančíková</td>
+   <td title="Adresa">Jasná 45</td>
+   <td title="PSČ">54321</td>
+   <td title="Město">Liberec</td>
+   <td title="Rok narození">1989</td>
+  </tr>
+  <tr>
+   <td title="Jméno">Lubomír Mirovic</td>
+   <td title="Adresa">Světová 258</td>
+   <td title="PSČ">35719</td>
+   <td title="Město">Praha</td>
+   <td title="Rok narození">2001</td>
+  </tr>
+  <tr>
+   <td title="Jméno">Alice Lexová</td>
+   <td title="Adresa">Líbivá 33</td>
+   <td title="PSČ">91730</td>
+   <td title="Město">Ostrava</td>
+   <td title="Rok narození">2000</td>
+  </tr>
+ </table>
+ 
+<h2>Záměna sloupců na řádky</h2>   
+ <table id="rolovani">
+  <div>
+
+  <tr>
+   <th>Jméno</th>
+   <th>Adresa</th>
+   <th>PSČ</th>
+   <th>Město</th>
+   <th>Rok narození</th>
+  </tr>
+  <tr>
+   <td title="Jméno">Pavel Pavlovič</td>
+   <td title="Adresa">Hustá 159</td>
+   <td title="PSČ">56789</td>
+   <td title="Město">Brno</td>
+   <td title="Rok narození">1999</td>
+  </tr>
+  <tr>
+   <td title="Jméno">Jana Jančíková</td>
+   <td title="Adresa">Jasná 45</td>
+   <td title="PSČ">54321</td>
+   <td title="Město">Liberec</td>
+   <td title="Rok narození">1989</td>
+  </tr>
+  <tr>
+   <td title="Jméno">Lubomír Mirovic</td>
+   <td title="Adresa">Světová 258</td>
+   <td title="PSČ">35719</td>
+   <td title="Město">Praha</td>
+   <td title="Rok narození">2001</td>
+  </tr>
+  <tr>
+   <td title="Jméno">Alice Lexová</td>
+   <td title="Adresa">Líbivá 33</td>
+   <td title="PSČ">91730</td>
+   <td title="Město">Ostrava</td>
+   <td title="Rok narození">2000</td>
+  </tr>
+  </div>
+ </table>
+  </body>
+</html>
